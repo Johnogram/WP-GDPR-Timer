@@ -244,7 +244,9 @@ class Jog_Gdpr_Timer_Admin {
 	}
 
 	/**
+	 * Render text colour option
 	 * 
+	 * @since	1.0.0
 	 */
 	public function jog_gdpr_options_text_colour_cb() {
 		$text_colour = get_option( $this->option_name . '_text_colour' );
@@ -258,7 +260,9 @@ class Jog_Gdpr_Timer_Admin {
 	}
 
 	/**
+	 * Render BG colour option
 	 * 
+	 * @since	1.0.0
 	 */
 	public function jog_gdpr_options_bg_colour_cb() {
 		$bg_colour = get_option( $this->option_name . '_bg_colour' );
@@ -272,7 +276,9 @@ class Jog_Gdpr_Timer_Admin {
 	}
 
 	/**
+	 * Render custom font URL option
 	 * 
+	 * @since	1.0.0
 	 */
 	public function jog_gdpr_options_custom_font_url_cb() {
 		$custom_font_url = get_option( $this->option_name . '_custom_font_url' );
@@ -286,7 +292,9 @@ class Jog_Gdpr_Timer_Admin {
 	}
 
 	/**
+	 * Render custom font family option
 	 * 
+	 * @since	1.0.0
 	 */
 	public function jog_gdpr_options_custom_font_family_cb() {
 		$custom_font_family = get_option( $this->option_name . '_custom_font_family' );
