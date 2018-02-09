@@ -15,7 +15,7 @@
  * @wordpress-plugin
  * Plugin Name:       GDPR Timer
  * Plugin URI:        https://johnogram.github.io/WP-GDPR-Timer/
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       A quick, easy to use and lightweight GDPR countdown timer, embeded on demand through the use of shortcodes.
  * Version:           1.0.0
  * Author:            John-O-Gram
  * Author URI:        http://minns.io

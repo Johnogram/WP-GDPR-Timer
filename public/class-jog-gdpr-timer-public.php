@@ -41,6 +41,15 @@ class Jog_Gdpr_Timer_Public {
 	private $version;
 
 	/**
+	 * UNIX Timestamp for GDPR
+	 * 
+	 * @since 	1.0.0
+	 * @access 	private
+	 * @var 	string		$gdpr_unix_time		The Unix Timestamp for GDPR
+	 */
+	private $gdpr_unix_time;
+
+	/**
 	 * Initialize the class and set its properties.
 	 *
 	 * @since    1.0.0
@@ -51,6 +60,8 @@ class Jog_Gdpr_Timer_Public {
 
 		$this->plugin_name = $plugin_name;
 		$this->version = $version;
+
+		$this->gdpr_unix_time = mktime( 0, 0, 0, 5, 25, 2018 );
 
 	}
 
@@ -98,6 +109,17 @@ class Jog_Gdpr_Timer_Public {
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/jog-gdpr-timer-public.js', array( 'jquery' ), $this->version, false );
 
+	}
+
+	/**
+	 * Get GDPR unix timestamp
+	 * 
+	 * @since 	1.0.0
+	 * @access 	private
+	 * @return	string 		The GDPR enforcement data as unix timestap
+	 */
+	private function get_gdpr_time() {
+		return $this->gdpr_unix_time;
 	}
 
 }
